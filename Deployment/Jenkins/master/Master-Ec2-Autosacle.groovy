@@ -117,6 +117,10 @@ pipeline {
                                 "ParameterValue": "${env.BackupBucket}"
                             },
                             {
+                                "ParameterKey": "BackupCronURL",
+                                "ParameterValue": "${env.BackupCronURL}"
+                            },
+                            {
                                 "ParameterKey": "BackupFolder",
                                 "ParameterValue": "${env.BackupFolder}"
                             },
@@ -139,6 +143,10 @@ pipeline {
                             {
                                 "ParameterKey": "DesiredCapacity",
                                 "ParameterValue": "${env.DesiredCapacity}"
+                            },
+                            {
+                                "ParameterKey": "DnsSuffix",
+                                "ParameterValue": "${env.DnsSuffix}"
                             },
                             {
                                 "ParameterKey": "EpelRepo",
